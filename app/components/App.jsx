@@ -1,3 +1,11 @@
 import React from 'react'
 
-export default () => (<div className="container"></div>);
+import Navbar from './layout/Navbar'
+
+export default () => (
+    <main>
+      <Navbar />
+      <div className="container">
+      </div>
+    </main>
+);

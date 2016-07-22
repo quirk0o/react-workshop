@@ -38,7 +38,9 @@ module.exports = {
       {
         test:   /\.(eot|svg|ttf|woff|woff2)$/,
         loader: 'file'
-      }
+      },
+      { test: require.resolve("react"), loader: "expose?React" },
+      { test: require.resolve("jquery"), loader: "expose?$!expose?jQuery" }
     ]
   },
   resolve:   {
